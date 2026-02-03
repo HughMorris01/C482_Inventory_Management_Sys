@@ -43,5 +43,3 @@ Environment Setup: Verify the JavaFX SDK is correctly configured in your library
 Run Application: Open the project in IntelliJ IDEA and execute the Main class.
 
 Technical Documentation: Detailed Javadoc is included in the /Javadoc directory, providing full technical specifications for all classes and methods.
-
-Would you like me to draft a "Future Roadmap" section that outlines how this system could be expanded with features like user authentication or cloud database integration?
