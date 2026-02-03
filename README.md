@@ -1,47 +1,46 @@
 Inventory Management System (JavaFX)
-A robust desktop application designed to manage complex inventories of parts and products. This system allows for full lifecycle management of inventory items while implementing specific business logic to ensure data integrity and relational consistency.
+A high-performance desktop solution for inventory lifecycle management, designed with a focus on data integrity, relational consistency, and user-centric design. This application provides a scalable framework for managing the complex relationships between component parts and finished products.
 
-🛠 Features
-Complete CRUD Operations: Create, Read, Update, and Delete functionality for both Parts and Products.
+🚀 Core Functionalities
+Full CRUD Lifecycle: Seamless Create, Read, Update, and Delete operations for both individual parts and composite products.
 
-Logical Validation: Implements business rules to prevent the deletion of products that are currently associated with one or more parts.
+Advanced Data Validation: Sophisticated business logic prevents data corruption, such as blocking the deletion of products currently associated with active parts.
 
-Dynamic Search: Real-time filtering for inventory items by ID or Name.
+Real-Time Dynamic Search: Instant, non-blocking filtering by ID or name to navigate large datasets efficiently.
 
-Relational Data Management: Supports "Parts" as standalone entities and "Products" as composite entities that can consist of multiple parts.
+Relational Object Mapping: Supports complex entities by managing "Parts" as standalone items and "Products" as composite entities.
 
-Error Handling: Custom exception handling and user alerts for invalid data entry or logical errors.
+Robust Exception Handling: Custom alerts and input validation (utilizing Regular Expressions) to ensure data cleanliness before database commits.
 
-🚀 Tech Stack
+🏗️ Technical Architecture
+The application is built using the Model-View-Controller (MVC) architectural pattern to ensure a strict separation of concerns, facilitating easier maintenance and future scalability.
+
+Model: Centralized data management within an Inventory hub for optimized data flow.
+
+View: Responsive UI layouts designed with FXML for a modern desktop experience.
+
+Controller: Dedicated logic handlers for UI interaction, data validation, and database communication.
+
+🛠️ Tech Stack
 Language: Java 11+
 
 GUI Framework: JavaFX (FXML)
 
 Database: MySQL
 
-IDE/Build Tools: IntelliJ IDEA / Maven
+Build Tools: Maven & IntelliJ IDEA
 
-📁 Project Structure
-src/: Contains the Java source files, including controllers for the UI and the data model classes.
-
-Javadoc/: Full technical documentation for the project classes and methods.
-
-.idea/: Project configuration for IntelliJ IDEA.
-
-💻 Installation & Setup
-Clone the repository:
+⚙️ Installation & Deployment
+Clone the Repository:
 
 Bash
 git clone https://github.com/HughMorris01/Inventory_Management_Sys.git
-Database Configuration: Ensure you have a MySQL instance running and update the database connection strings in the source code to match your environment.
+Database Configuration: Ensure a MySQL instance is running and update the connection strings within the source code to match your environment.
 
-Run the Application: Open the project in IntelliJ IDEA, ensure the JavaFX SDK is configured in your library settings, and run the Main class.
+Environment Setup: Verify the JavaFX SDK is correctly configured in your library settings.
 
-📝 Technical Implementation Details
-During development, specific focus was placed on:
+Run Application: Open the project in IntelliJ IDEA and execute the Main class.
 
-MVC Architecture: Decoupling the data models from the view logic and controllers for better maintainability.
+Technical Documentation: Detailed Javadoc is included in the /Javadoc directory, providing full technical specifications for all classes and methods.
 
-Input Validation: Using Regular Expressions and conditional logic to ensure numerical data types and required fields are correctly handled before database commits.
-
-Scalability: Designing the Inventory class as a central data hub to allow for easy expansion of the part/product relationship.
+Would you like me to draft a "Future Roadmap" section that outlines how this system could be expanded with features like user authentication or cloud database integration?
