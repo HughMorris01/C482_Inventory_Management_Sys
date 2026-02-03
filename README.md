@@ -35,6 +35,7 @@ Clone the Repository:
 
 Bash
 git clone https://github.com/HughMorris01/Inventory_Management_Sys.git
+
 Database Configuration: Ensure a MySQL instance is running and update the connection strings within the source code to match your environment.
 
 Environment Setup: Verify the JavaFX SDK is correctly configured in your library settings.
