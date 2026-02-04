@@ -1,45 +1,26 @@
-Inventory Management System (JavaFX)
-A high-performance desktop solution for inventory lifecycle management, designed with a focus on data integrity, relational consistency, and user-centric design. This application provides a scalable framework for managing the complex relationships between component parts and finished products.
+# Inventory Management System (C482)
+*A Robust JavaFX Application for Real-Time Inventory Control*
 
-🚀 Core Functionalities
-Full CRUD Lifecycle: Seamless Create, Read, Update, and Delete operations for both individual parts and composite products.
+![Project Showcase](inventory_showcase.png)
 
-Advanced Data Validation: Sophisticated business logic prevents data corruption, such as blocking the deletion of products currently associated with active parts.
+## 📋 Overview
+This application provides a streamlined interface for manufacturing firms to manage their parts and products inventory. It features a dual-pane dashboard for simultaneous tracking and multi-level data validation.
 
-Real-Time Dynamic Search: Instant, non-blocking filtering by ID or name to navigate large datasets efficiently.
+**Core Functionality:**
+* **Inventory Tracking:** Manage in-house and outsourced parts.
+* **Product Association:** Link multiple parts to specific retail products.
+* **Validation Engine:** Real-time checking for logical errors (e.g., inventory minimums vs. maximums).
+* **Search & Filter:** Instant lookup by ID or Name across all tables.
 
-Relational Object Mapping: Supports complex entities by managing "Parts" as standalone items and "Products" as composite entities.
+## 🚀 Getting Started
+This project has been modernized to run with **Maven** and **Java 17**.
 
-Robust Exception Handling: Custom alerts and input validation (utilizing Regular Expressions) to ensure data cleanliness before database commits.
+### Setup Instructions
+1. **Clone the Repo:** `git clone https://github.com/hughmorris01/C482_INVENTORY_MANAGEMENT_SYS.git`
+2. **Open in IntelliJ:** The IDE will detect the `pom.xml` and download JavaFX automatically.
+3. **Run:** Open `src/main/Launcher.java` and click the **Green Play Button**.
 
-🏗️ Technical Architecture
-The application is built using the Model-View-Controller (MVC) architectural pattern to ensure a strict separation of concerns, facilitating easier maintenance and future scalability.
-
-Model: Centralized data management within an Inventory hub for optimized data flow.
-
-View: Responsive UI layouts designed with FXML for a modern desktop experience.
-
-Controller: Dedicated logic handlers for UI interaction, data validation, and database communication.
-
-🛠️ Tech Stack
-Language: Java 11+
-
-GUI Framework: JavaFX (FXML)
-
-Database: MySQL
-
-Build Tools: Maven & IntelliJ IDEA
-
-⚙️ Installation & Deployment
-Clone the Repository:
-
-Bash
-git clone https://github.com/HughMorris01/Inventory_Management_Sys.git
-
-Database Configuration: Ensure a MySQL instance is running and update the connection strings within the source code to match your environment.
-
-Environment Setup: Verify the JavaFX SDK is correctly configured in your library settings.
-
-Run Application: Open the project in IntelliJ IDEA and execute the Main class.
-
-Technical Documentation: Detailed Javadoc is included in the /Javadoc directory, providing full technical specifications for all classes and methods.
+## 🛠️ Built With
+* **Java 17**
+* **JavaFX** (FXML & Controllers)
+* **Maven** (Dependency Management)
